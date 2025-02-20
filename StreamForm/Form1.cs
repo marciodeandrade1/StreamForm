@@ -29,5 +29,19 @@ namespace StreamForm
                 Arq.Close();
             }
         }
+
+        private void btnSalvarComo_Click(object sender, EventArgs e)
+        {
+            if(saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                StreamWriter Arq = new StreamWriter(saveFileDialog1.FileName);
+                foreach(string s in textBox1.Lines)
+                {
+                    Arq.WriteLine(s);
+                }
+                Arq.Close();
+                
+            }
+        }
     }
 }

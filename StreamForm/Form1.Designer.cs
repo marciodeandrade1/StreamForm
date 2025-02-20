@@ -53,6 +53,7 @@
             this.btnSalvarComo.TabIndex = 1;
             this.btnSalvarComo.Text = "Salvar como";
             this.btnSalvarComo.UseVisualStyleBackColor = true;
+            this.btnSalvarComo.Click += new System.EventHandler(this.btnSalvarComo_Click);
             // 
             // textBox1
             // 
